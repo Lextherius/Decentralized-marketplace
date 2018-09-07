@@ -53,7 +53,7 @@ function claimFundsFromContract(MerchandiseContract, resolve, reject) {
     MerchandiseContract.deployed().then((merchandisecontract) => {
         return merchandisecontract.claimFunds( 0, {
             gas: 1000000,
-            gasPrice: 20000000000
+            gasPrice: 2000000000
         })
     })
     .then(result => {
