@@ -5,7 +5,7 @@
   "scripts": {
     "build": "node_modules/.bin/webpack --progress --verbose --colors --display-error-details --config config/webpack/common.config.js",
     "deploy": "docker build -t etherslist:latest .",
-    "start": "NODE_ENV=development node bin/server.js",
+    "start": "node bin/server.js",
     "lint": "./node_modules/.bin/eslint src --fix",
     "test": "jest --verbose"
   },
@@ -67,9 +67,11 @@
     "webpack-merge": "^0.7.3"
   },
   "dependencies": {
+    "ethjs-unit": "^0.1.6",
     "material-ui": "^0.19.4",
     "morgan": "^1.6.1",
     "prop-types": "^15.6.0",
+    "randomhex": "^0.1.5",
     "react": "^15.4.1",
     "react-dnd": "^2.5.4",
     "react-dnd-html5-backend": "^2.5.4",
@@ -79,8 +81,11 @@
     "react-tap-event-plugin": "^2.0.1",
     "redux": "^3.1.4",
     "redux-thunk": "^2.2.0",
+    "swarm-js": "^0.1.39",
     "truffle-contract": "^3.0.3",
-    "web3": "^1.0.0-beta.27"
+    "underscore": "^1.9.1",
+    "utf8": "^3.0.0",
+    "web3": "^1.0.0-beta.26"
   },
   "lint-staged": {
     "src/**/*.js": [
